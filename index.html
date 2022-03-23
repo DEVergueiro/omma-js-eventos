@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +20,7 @@
         <section class="formulario">
             <h2>Adicionar nova receita</h2>
             <form>
-                <label for="titulo">Titulo</label>
+                <label for="titulo">Título</label>
                 <input type="text" name="titulo" id="titulo">
                 <br>
                 <label for="dificuldade">Dificuldade</label>
@@ -38,18 +38,17 @@
                 <label for="preparo">Preparo</label>
                 <textarea name="preparo" id="preparo"></textarea>
                 <br>
-                <label for="link">link</label>
+                <label for="link">Link</label>
                 <input type="text" name="link" id="link">
                 <br>
-                <label for="vegano">Vegano</label>
-                <label for="vegano-true">
-                    <input type="radio" id="vegano-true" name="vegano" value="sim">
-                    sim
-                </label>
-                <label for="vegano-false">
-                    <input type="radio" id="vegano-false" name="vegano" value="não" checked>
-                    não
-                </label>
+                <div id="janela-vegano">
+                    <p><label for="vegano">Vegano</label><br>
+                        <label for="vegano-true" class="vegano-sn">Sim</label>
+                        <input type="radio" class="vegano-sn id="vegano-true" name="vegano" value="sim">
+                        <label for="vegano-false" class="vegano-sn">Não</label>
+                        <input type="radio" class="vegano-sn id="vegano-false" name="vegano" value="não" checked>
+                    </p>
+                </div>
                 <br>
                 <button id="btnEnviar">enviar</button>
             </form>

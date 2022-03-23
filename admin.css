@@ -36,8 +36,8 @@ article {
 input,
 textarea {
     width: 100%;
-    padding: 5px 10px;
-    margin: 5px 0;
+    padding: 10px 10px;
+    margin: 10px 0;
 }
 
 button {
@@ -47,4 +47,22 @@ button {
     margin: 5px 0;
     border: none;
     text-transform: uppercase;
+}
+
+#dificuldade {
+    margin: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#janela-vegano {
+    flex-wrap: wrap;
+}
+
+.vegano-sn {
+    font-weight: normal;
+    width: auto;
+    padding: 5px;
 }

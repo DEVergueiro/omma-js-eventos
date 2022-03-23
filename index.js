@@ -8,7 +8,7 @@ const listaDeReceitas = [{
   ingredientes: ["1 pao de leite", "1 Salsicha", "Maionese"],
   preparo: "jodbvnujd osbvcujsbn jsbfusb",
   link: "youtube.com",
-  vegano: false,
+  vegano: "não",
 }, ];
 
 const cadastrarReceita = (
@@ -66,6 +66,15 @@ btnEnviar.onclick = (evento) => {
   exibirReceitas();
 }
 
+// function valorVegano (vegano) {
+//   if (true) {
+//     true = 'sim'
+//   }else {
+//     false = 'não'
+//   }
+  
+// }
+
 function exibirReceitas() {
 
   let htmlReceitas = '';
@@ -73,11 +82,11 @@ function exibirReceitas() {
   for (let index = 0; index < listaDeReceitas.length; index++) {
     htmlReceitas += `<article class="card">
           <h2>${listaDeReceitas[index].titulo}</h2>
-          <small>Dificuldade: ${listaDeReceitas[index].dificuldade}</small>
-          <p>Ingredientes: ${listaDeReceitas[index].ingredientes}</p>
-          <p>Modo de Preparo: ${listaDeReceitas[index].preparo}</p>
-          <p>Link: ${listaDeReceitas[index].link}</p>
-          <p>Vegano: ${listaDeReceitas[index].vegano}</p>
+          <p><strong>Dificuldade:</strong> ${listaDeReceitas[index].dificuldade}</p>
+          <p><strong>Ingredientes:</strong> ${listaDeReceitas[index].ingredientes}</p>
+          <p><strong>Modo de Preparo:</strong> ${listaDeReceitas[index].preparo}</p>
+          <p><strong>Link:</strong> ${listaDeReceitas[index].link}</p>
+          <p><strong>Vegano:</strong> ${listaDeReceitas[index].vegano}</p>
       </article>`;
   }
 
