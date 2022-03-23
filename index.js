@@ -74,7 +74,10 @@ function exibirReceitas() {
     htmlReceitas += `<article class="card">
           <h2>${listaDeReceitas[index].titulo}</h2>
           <small>Dificuldade: ${listaDeReceitas[index].dificuldade}</small>
-          <p> ${listaDeReceitas[index].preparo}</p>
+          <p>Ingredientes: ${listaDeReceitas[index].ingredientes}</p>
+          <p>Modo de Preparo: ${listaDeReceitas[index].preparo}</p>
+          <p>Link: ${listaDeReceitas[index].link}</p>
+          <p>Vegano: ${listaDeReceitas[index].vegano}</p>
       </article>`;
   }
 
